@@ -1,6 +1,6 @@
 using System;
 
-public class Bispo : Peao
+public class Bispo : Peça
 {
     public Bispo(string cor, int x, int y) : base(cor, x, y){}
     public override bool VerificarMovimento()
