@@ -6,6 +6,9 @@ partial class Form1
     ///  Required designer variable.
     /// </summary>
     private System.ComponentModel.IContainer components = null;
+    private const int GridSize = 8;
+    private Button[,] grid = new Button[GridSize, GridSize];
+   
 
     /// <summary>
     ///  Clean up any resources being used.
@@ -28,6 +31,20 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
+        for (int linha = 0; linha < GridSize; linha++)
+        {
+            for (int coluna = 0; coluna < GridSize; coluna++)
+            {
+                Button botao = new Button();
+                botao.Size = new Size(50, 50);
+                botao.Location = new Point(50 * linha, 50 * coluna);
+               
+                int x = linha;
+                int y = coluna;
+                
+                grid[linha, coluna] = botao;
+                this.Controls.Add(botao);
+            }
         this.components = new System.ComponentModel.Container();
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(850, 850);
@@ -144,4 +161,5 @@ partial class Form1
     }
 
     #endregion
+}
 }
