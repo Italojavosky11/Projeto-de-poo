@@ -10,6 +10,10 @@ partial class Form1
     /// <summary>
     ///  Clean up any resources being used.
     /// </summary>
+    /// private System.ComponentModel.IContainer components = null;
+    private const int GridSize = 8;
+    private Button[,] grid = new Button[GridSize, GridSize];
+    private Random random = new Random();
     /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
     protected override void Dispose(bool disposing)
     {
@@ -32,6 +36,19 @@ partial class Form1
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(850, 850);
         this.Text = "xadrez";
+        for (int coluna = 0; coluna < GridSize; coluna++)
+        for (int linha = 0 ; linha < GridSize; linha ++)
+            {
+                Button botao = new Button();
+                botao.Size = new Size(50, 50);
+                botao.Location = new Point(50 * linha, 50 * coluna);
+            
+                int x = linha;
+                int y = coluna;
+                
+                grid[x, y] = botao;
+                this.Controls.Add(botao);
+            }
 
         PictureBox rei = new PictureBox();
         rei.Location = new Point(50, 50);
