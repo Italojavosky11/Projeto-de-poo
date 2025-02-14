@@ -31,6 +31,7 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
+<<<<<<< HEAD
         for (int x = 0; x < GridSize; x++)
         {
             for (int y = 0; y < GridSize; y++)
@@ -43,6 +44,20 @@ partial class Form1
                 int Y = y;
                 
                 grid[x, y] = botao;
+=======
+        for (int linha = 0; linha < GridSize; linha++)
+        {
+            for (int coluna = 0; coluna < GridSize; coluna++)
+            {
+                Button botao = new Button();
+                botao.Size = new Size(50, 50);
+                botao.Location = new Point(50 * linha, 50 * coluna);
+               
+                int x = linha;
+                int y = coluna;
+                
+                grid[linha, coluna] = botao;
+>>>>>>> aee844b09714b41b8697d7952a44874ab3146b36
                 this.Controls.Add(botao);
             }
         this.components = new System.ComponentModel.Container();
@@ -162,4 +177,8 @@ partial class Form1
 
     #endregion
 }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aee844b09714b41b8697d7952a44874ab3146b36
