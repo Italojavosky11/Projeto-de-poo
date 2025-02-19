@@ -86,6 +86,7 @@
             }
 
             this.Controls.Add(rei);
+             rei.BringToFront();
 
             PictureBox rainha = new PictureBox();
             rainha.Location = new Point(50, 50);
@@ -104,6 +105,7 @@
             }
 
             this.Controls.Add(rainha);
+             rainha.BringToFront();
 
             PictureBox torre = new PictureBox();
             torre.Location = new Point(50, 50);
@@ -122,6 +124,7 @@
             }
 
             this.Controls.Add(torre);
+             torre.BringToFront();
 
             PictureBox cavalo = new PictureBox();
             cavalo.Location = new Point(50, 50);
@@ -160,6 +163,7 @@
             }
 
             this.Controls.Add(bispo);
+             bispo.BringToFront();
             
             PictureBox peao = new PictureBox();
             peao.Location = new Point(50, 50);
@@ -178,6 +182,8 @@
             }
 
             this.Controls.Add(peao);
+             peao.BringToFront();
+
         
         
         
