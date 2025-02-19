@@ -89,7 +89,7 @@
              rei.BringToFront();
 
             PictureBox rainha = new PictureBox();
-            rainha.Location = new Point(50, 50);
+            rainha.Location = new Point(10, 10);
             rainha.Size = new Size(50, 50);
             rainha.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -108,7 +108,7 @@
              rainha.BringToFront();
 
             PictureBox torre = new PictureBox();
-            torre.Location = new Point(50, 50);
+            torre.Location = new Point(0, 0);
             torre.Size = new Size(50, 50);
             torre.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -127,7 +127,7 @@
              torre.BringToFront();
 
             PictureBox cavalo = new PictureBox();
-            cavalo.Location = new Point(50, 50);
+            cavalo.Location = new Point(100, 100);
             cavalo.Size = new Size(50, 50);
             cavalo.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -147,7 +147,7 @@
             this.Controls.Add(cavalo);
              cavalo.BringToFront();
             PictureBox bispo = new PictureBox();
-            bispo.Location = new Point(50, 50);
+            bispo.Location = new Point(40, 50);
             bispo.Size = new Size(50, 50);
             bispo.SizeMode = PictureBoxSizeMode.StretchImage;
 
