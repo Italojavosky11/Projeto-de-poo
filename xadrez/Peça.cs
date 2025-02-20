@@ -11,5 +11,5 @@ public abstract class Peça{
         this.Y = Y;
     }
 
-    public abstract bool VerificarMovimento(); // vai verificar se o movimento é válido 
+    public abstract bool VerificarMovimento(int destinoX, int destinoY); // vai verificar se o movimento é válido 
 }
