@@ -28,7 +28,7 @@ public class Tabuleiro
         Pecas[1, 2] = new Cavalo("black", 1, 2); // cavalo black
         Pecas[1, 3] = new Bispo("preto", 1, 3); // bispo black
         Pecas[1, 4] = new Rainha("black", 1, 4); //rainha black
-        Pecas[1, 5] = new Rei("preto", 1, 5); // rei black
+        Pecas[1, 5] = new Rei("preto", 1, 5); //rei black
         Pecas[1, 6] = new Bispo("preto", 1, 6); // bispo balck
         Pecas[1, 7] = new Cavalo("black", 1, 7); // cavalo black
         Pecas[1, 8] = new Torre("preto", 1, 8); // torre black
